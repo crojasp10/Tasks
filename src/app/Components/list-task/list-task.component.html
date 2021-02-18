@@ -1,0 +1,26 @@
+<div class="container">
+    <h3 class="ml-3">MisTareas</h3>
+
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <div class="tarjeta">
+                    <div *ngFor="let tar of list" class="cuerpo-tarjeta">
+                        <h5>{{tar.title}}</h5>
+                        <p class="descripcion">{{tar.description}}</p>
+
+                        <hr>
+
+                        <div class="row justify-content-between container">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-warning" > Editar </button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-warning" (click)="deletetask(tar.id)" > Delete </button>
+                            </div>
+                            
+                            
+                        </div>
+            </div>
+        </div>
+    </div>
