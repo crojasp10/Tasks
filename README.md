@@ -1,27 +1,27 @@
-# PruebaLumon
+# Prueba Lumon
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
+Para este proyecto se usó [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
 
-## Development server
+## Despliegue del servidor
+Para desplegar el servidor se necesitó instalar [json-server](https://www.npmjs.com/package/json-server) Se requiere un archivo [JSON](https://github.com/crojasp10/Tasks/blob/master/Json/db.json) para montar los servicios.
+### Pasos de instalación
+1. `npm install -g json-server`
+2. `json-server --watch db.json`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Despliegue del sitio web
+1. `ng serve --open`
+2. Navegar a `http://localhost:4200/`. La aplicación se recarga automáticamente si se realiza un cambio en los archivos.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Correr pruebas unitarias
 
-## Build
+Correr `ng test` para ejecutar las pruebas unitarias.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Correr pruebas end-to-end
 
-## Running unit tests
+Correr `ng e2e` para ejecutar las pruebas end-to-end.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Tareas pendientes
+1. Llamado de servicios desde la página web
+2. Ajustar estilos.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
